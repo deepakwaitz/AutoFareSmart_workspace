@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="transparent">#00000000</color>
+
+    <drawable name="white_bg">#FF00E5EE</drawable>
+    <drawable name="blue_bg">#FF436EEE</drawable>
+    <drawable name="green_bg">#FF55AE3A</drawable>
+    <drawable name="cyan">#00ffff</drawable>
+    <drawable name="black">#000000</drawable>
+
+    <color name="bg_color">#dedede</color>
+    <color name="blue_bg_color">#71b4c3</color>
+    <color name="yellow">#ffda00</color>
+    <color name="textColor">#dedede</color>
+
+</resources>

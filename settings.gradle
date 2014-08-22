@@ -1,0 +1,4 @@
+include ':SherlockLibrary'
+include ':google-play-services_lib'
+include ':AutoFare'
+include ':SherlockDrawerLibrary'

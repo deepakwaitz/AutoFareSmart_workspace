@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color" >
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="15dp"
+        android:background="@drawable/home_backgroung" >
+
+        <RelativeLayout
+            android:id="@+id/from_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp" >
+
+            <TextView
+                android:id="@+id/from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:text="From :"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                android:textStyle="normal" />
+
+         
+
+            <AutoCompleteTextView
+                android:id="@+id/from_edittext"
+                android:layout_width="450dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/from"
+                android:singleLine="true"
+                  android:background="@drawable/edittext_bg_2"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/to_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/from_layout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp" >
+
+            <TextView
+                android:id="@+id/to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="8dp"
+                android:text="To   :"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                android:textStyle="normal" />
+
+            <AutoCompleteTextView
+                android:id="@+id/to_edittext"
+                android:layout_width="450dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/to"
+                
+                android:singleLine="true"
+                  android:background="@drawable/edittext_bg_2"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/tratckLoc"
+            android:layout_width="170dp"
+            android:layout_height="80dp"
+            android:background="@drawable/start_button"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="71dp" />
+
+        <Button
+            android:id="@+id/get_fare"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_alignLeft="@+id/tratckLoc"
+            android:layout_below="@+id/to_layout"
+            android:layout_marginTop="104dp"
+            android:background="@drawable/get_route"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/location"
+            android:layout_width="45dp"
+            android:layout_height="70dp"
+            android:layout_alignTop="@+id/from_layout"
+            android:layout_marginLeft="35dp"
+            android:layout_toRightOf="@+id/from_layout"
+            android:background="@drawable/my_location" />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/address_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:background="@drawable/background"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/destination_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/destinationTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Destination :"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                android:textStyle="normal" />
+
+            <AutoCompleteTextView
+                android:id="@+id/destination"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/go"
+                android:background="@drawable/edittext_bg_2"
+                android:layout_toRightOf="@id/destinationTxt"
+                android:singleLine="true"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/go"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/go" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/fare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/destination_layout"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/map_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fare"
+            android:layout_margin="15dp" />
+
+        <Button
+            android:id="@+id/stop_tracking"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:background="@drawable/stop_tracking" />
+
+        <Button
+            android:id="@+id/details"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="88dp"
+
+
+            android:background="@drawable/more_details"
+            android:layout_below="@+id/fare"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/address_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
